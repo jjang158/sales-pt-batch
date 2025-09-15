@@ -31,7 +31,6 @@ ext {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-batch'
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-    implementation 'org.springframework.ai:spring-ai-starter-vector-store-pgvector'
     compileOnly 'org.projectlombok:lombok'
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
     runtimeOnly 'org.postgresql:postgresql'
@@ -39,6 +38,8 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'org.springframework.batch:spring-batch-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+    implementation 'com.pgvector:pgvector:0.1.2'
+    implementation 'com.theokanning.openai-gpt3-java:service:0.18.2'
 }
 
 dependencyManagement {
